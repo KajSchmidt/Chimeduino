@@ -1,3 +1,5 @@
+int BUTTON_PIN[] = {0,1,2,3,4,5}; //Defining all analog ports as buttons.
+
 boolean checkBUTTON(int btn) {  //Take int and look for positive flank in analog inputs
   static int BUTTON_TRIGGER[6];
   boolean result = false;

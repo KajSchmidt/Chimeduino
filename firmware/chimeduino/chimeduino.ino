@@ -1,6 +1,4 @@
 #include <SD.h>
-#include <SPI.h>
-#include <Ethernet.h>
 
 /*
 Project: Chimeduino
@@ -13,11 +11,6 @@ Webpage: https://github.com/KajSchmidt/Chimeduino
 License: CC-BY-SA 3.0
 
 */
-
-
-
-
-int BUTTON_PIN[] = {0,1,2,3,4,5}; //Defining all analog ports as buttons.
 
 int SOLENOID_1 = 1;
 int SOLENOID_2 = 2;
@@ -36,7 +29,6 @@ int CS_NW = 10;
 
 
 boolean CARD_PRESENT = true;
-boolean NET_PRESENT = false;
 
 
 // Music settings
@@ -61,8 +53,8 @@ void setup() {
 }
 
 void loop() {
-  if (checkBUTTON(0) == true) playSONG("mario.txt");
-  if (checkMAIL() == true) playSONG("mario.txt");
+  if (checkBUTTON(0) == true) playSONG("imp.txt");
+  //if (checkMAIL() == true) playSONG("mario.txt");
 }
 
 
