@@ -53,8 +53,12 @@ void setup() {
 }
 
 void loop() {
-  if (checkBUTTON(0) == true) playSONG("imp.txt");
-  //if (checkMAIL() == true) playSONG("mario.txt");
+  if (checkBUTTON(0) == true) playSONG("bt0.txt");
+  if (checkBUTTON(1) == true) playSONG("bt1.txt");
+  if (checkBUTTON(2) == true) playSONG("bt2.txt");
+  if (checkBUTTON(3) == true) playSONG("bt3.txt");
+  if (checkBUTTON(4) == true) playSONG("bt4.txt");
+  if (checkBUTTON(5) == true) playSONG("bt5.txt");
 }
 
 
